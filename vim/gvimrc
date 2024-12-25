@@ -1,0 +1,14 @@
+" start with full screen
+autocmd GUIEnter * call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
+" no menu
+set guioptions-=m "menu bar
+set guioptions-=T "toolbar
+set guioptions-=r "scrollbar
+set guifont=Luxi\ Mono\ 10
+
+" bell off
+set belloff=all
+
+" HDPI
+set encoding=utf-8
+set rop=type:directx

@@ -1,0 +1,81 @@
+set wildmenu
+set visualbell
+set t_vb=
+set nocompatible
+filetype on
+syntax on
+set ai
+set ci
+set si
+set nu
+set ts=4
+set sts=4
+set sw=4
+set signcolumn=yes
+set backspace=indent,eol,start
+set mouse=a
+set termguicolors
+set noswapfile
+set hidden
+set cursorline
+augroup cursor_line
+	au!
+	au WinLeave * set nocursorline
+	au WinEnter * set cursorline
+augroup end
+colorscheme desert
+
+" cursor setting
+let &t_SI="\<ESC>[5 q"
+let &t_EI="\<ESC>[2 q"
+
+" My key mapping
+nnoremap <space> 3<c-e>3j
+nnoremap <s-space> 3<c-y>3k 
+nnoremap <c-k> <c-y>k
+nnoremap <c-j> <c-e>j
+nnoremap <c-a> ^
+nnoremap <c-h> <esc>:bprev<cr> 
+nnoremap <c-l> <esc>:bnex<cr>
+nnoremap <tab> <c-w>w
+nnoremap <c-s> <esc>:w %<cr>
+
+" automatic sourcing
+augroup auto_so
+	au!
+	au BufWritePost *.vim so %
+	au BufWritePost vimrc so %
+	au BufWritePost .vimrc so %
+augroup end
+
+" layout
+source ~/.vim/my_layout.vim
+
+" recent file popup
+source ~/.vim/my_recent_file.vim
+
+" vimspector
+source ~/.vim/my_vimspector_setting.vim
+packadd! vimspector
+
+" vim airline
+source ~/.vim/my_airline_setting.vim
+set rtp+=~/.vim/vim-airline-master
+set rtp+=~/.vim/vim-airline-themes-master
+
+" fzf settings
+set rtp+=~/.vim/fzf-master
+set rtp+=~/.vim/fzf.vim-master
+source ~/.vim/my_fzf_settings.vim
+
+" vim-cmake
+source ~/.vim/my_cmake_setting.vim
+set rtp+=~/.vim/cmake4vim-master
+
+" cscope
+source ~/.vim/my_cscope_setting.vim
+
+" breakpts (vim debugger)
+set rtp+=~/.vim/genutils-master
+set rtp+=~/.vim/vim-breakpts-master
+source ~/.vim/my_breakpts_setting.vim

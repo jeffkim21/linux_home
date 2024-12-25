@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/jeffkim/.vim/pack/vimspector/opt/vimspector/gadgets/linux'
+let g:netrw_dirhist_8='/home/jeffkim/.vim/pack/vimspector/opt/vimspector/gadgets'
+let g:netrw_dirhist_7='/home/jeffkim/.vim/pack/vimspector/opt/vimspector'
+let g:netrw_dirhist_6='/home/jeffkim/.vim/pack/vimspector/opt'
+let g:netrw_dirhist_5='/home/jeffkim/.vim/pack/vimspector'
+let g:netrw_dirhist_4='/home/jeffkim/.vim/pack'
+let g:netrw_dirhist_3='/home/jeffkim/.vim'
+let g:netrw_dirhist_2='/home/jeffkim'
+let g:netrw_dirhist_1='/home'
+let g:netrw_dirhist_0='/home/jeffkim'
