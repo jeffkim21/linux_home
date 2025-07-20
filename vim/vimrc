@@ -79,3 +79,7 @@ source ~/.vim/my_cscope_setting.vim
 set rtp+=~/.vim/genutils-master
 set rtp+=~/.vim/vim-breakpts-master
 source ~/.vim/my_breakpts_setting.vim
+
+source ~/.vim/vim-lsp.vim
+packadd! vim-lsp
+
