@@ -52,7 +52,7 @@ augroup end
 source ~/.vim/my_layout.vim
 
 " recent file popup
-source ~/.vim/my_recent_file.vim
+" source ~/.vim/my_recent_file.vim
 
 " vimspector
 source ~/.vim/my_vimspector_setting.vim
@@ -76,13 +76,16 @@ set rtp+=~/.vim/cmake4vim-master
 source ~/.vim/my_cscope_setting.vim
 
 " breakpts (vim debugger)
-set rtp+=~/.vim/genutils-master
-set rtp+=~/.vim/vim-breakpts-master
-source ~/.vim/my_breakpts_setting.vim
+"set rtp+=~/.vim/genutils-master
+"set rtp+=~/.vim/vim-breakpts-master
+"source ~/.vim/my_breakpts_setting.vim
 
-"source ~/.vim/vim-lsp.vim
-"packadd! vim-lsp
+source ~/.vim/my_vimlsp_setting.vim
+packadd! vim-lsp
 
 packadd! vim-gutentags
 "packadd! gutentags_plus
 source ~/.vim/my_gutentags.vim
+
+set rtp+=~/.vim/vim-ccls
+source ~/.vim/my_vimccls_setting.vim
